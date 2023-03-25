@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Resume</title>
+    <style>
+        .resume {
+            width: 6.1in;
+            height: 7.86in;
+        }
+
+        .box {
+            background-color: rgb(183, 182, 255);
+            width: 100%;
+            height: 100%;
+        }
+
+        .left-side {
+            color: rgb(91, 88, 255);
+            width: 33%;
+            height: 100%;
+            background-color: rgb(12, 36, 58);
+
+        }
+
+        .right-side {
+            height: 100%;
+            width: 65%;
+            color: rgb(1, 0, 66);
+        }
+
+        .name {
+            font-size: 1.2rem;
+        }
+
+        .profile-image {
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 3%;
+        }
+
+        .profile-image img {
+            border-radius: 50%;
+        }
+
+        .heading-text {
+            font-size: 0.9rem;
+        }
+
+        .para,
+        .per-info {
+            font-size: 0.7rem !important;
+        }
+
+        .about .para{
+            width: 93%;
+        }
+        .key-skills li{
+            font-size: 0.7rem;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="resume border shadow d-flex aligh-items-center jusify-content-center">
+        <div class="box">
+            <!-- SPELLING MISTAKE -->
+            <div class="left-side d-inline-block">
+                <div class="profile-image">
+                    <img class="img-fluid" src="data:image/png;base64,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" alt="">
+                </div>
+                <div class="contact ml-2 mt-2">
+                    <div class="heading-text text-uppercase">Contact</div>
+                    <p class="para mb-1">
+                    </p>
+                </div>
+                <div class="expert ml-2 mt-2">
+                    <div class="heading-text text-uppercase">Expertise Area</div>
+                    <p class="para mb-1">
+                    </p>
+                </div>
+
+                <div class="skill ml-2 mt-2">
+                    <div class="heading-text text-uppercase">IT Skill</div>
+                    <p class="para mb-1">
+                    </p>
+                </div>
+
+
+                <div class="hobbies ml-2 mt-2">
+                    <div class="heading-text text-uppercase"></div>
+                    <p class="para mb-1">
+                    </p>
+                </div>
+            </div>
+            <div class="right-side d-inline-block m-0 p-0 align-top">
+                <h2 class="name text-uppercase ml-3 my-2"></h2>
+
+                <div class="contact ml-3 mt-3">
+                    <div class="heading-text text-uppercase"></div>
+                    <p class="para mb-1">
+                        
+                    </p>
+                </div>
+                <div class="personal ml-3 mt-3">
+                    <div class="heading-text text-uppercase"></div>
+                    <table class="per-info">
+                        <tbody>
+                            <tr class="border">
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="border">
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="border">
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr class="border">
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+                <div class="education ml-3 mt-3">
+                    <div class="heading-text text-uppercase">Educational informations</div>
+                    <table class="per-info">
+                        <tbody>
+                            <tr class="border">
+                                <td></td>
+                                <td>
+                                   
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+
+
+                <div class="key-skills ml-3 mt-3">
+                    <div class="heading-text text-uppercase">Key Skills</div>
+                    <ul class="pl-1">
+                        <li>Understanding accounting and financial principles</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> -->
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
